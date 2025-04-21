@@ -4,12 +4,27 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CSC317_Tracker"
-    Shell.FlyoutBehavior="Flyout"
+    xmlns:pages="clr-namespace:CSC317_Tracker.Pages"
+    Shell.FlyoutBehavior="Disabled"
     Title="CSC317_Tracker">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar x:Name="NavBar">
+        <Tab Title="Dashboard">
+            <ShellContent ContentTemplate="{DataTemplate pages:DashboardPage}" />
+        </Tab>
+        <Tab Title="Add Expenses">
+            <ShellContent ContentTemplate="{DataTemplate pages:ExpenseTrackerPage}" />
+        </Tab>
+        <Tab Title="Budget">
+            <ShellContent ContentTemplate="{DataTemplate pages:BudgetPage}" />
+        </Tab>
+        <Tab Title="Goals">
+            <ShellContent ContentTemplate="{DataTemplate pages:GoalsPage}" />
+        </Tab>
+        <Tab Title="Statistics">
+            <ShellContent ContentTemplate="{DataTemplate pages:StatisticsPage}" />
+        </Tab>
+    </TabBar>
+
 
 </Shell>

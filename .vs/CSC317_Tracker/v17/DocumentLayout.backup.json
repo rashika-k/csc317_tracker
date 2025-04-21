@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\pages\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\pages\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\pages\\budgetpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\pages\\budgetpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\pages\\expensetrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\pages\\expensetrackerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|c:\\users\\chach\\onedrive\\documents\\2025 spring\\money tracker\\csc317_tracker\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B66878B6-2821-4C2A-A945-C67128E6A0D7}|CSC317_Tracker\\CSC317_Tracker.csproj|solutionrelative:csc317_tracker\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\Pages\\DashboardPage.xaml",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\DashboardPage.xaml",
+              "RelativeToolTip": "CSC317_Tracker\\Pages\\DashboardPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T20:23:26.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboardpage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\Dashboardpage.xaml.cs",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\Pages\\Dashboardpage.xaml.cs",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\Dashboardpage.xaml.cs",
+              "RelativeToolTip": "CSC317_Tracker\\Pages\\Dashboardpage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:03:15.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExpenseTrackerpage.xaml",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\ExpenseTrackerpage.xaml",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\Pages\\ExpenseTrackerpage.xaml",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\ExpenseTrackerpage.xaml",
+              "RelativeToolTip": "CSC317_Tracker\\Pages\\ExpenseTrackerpage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T20:03:12.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BudgetPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\BudgetPage.xaml.cs",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\Pages\\BudgetPage.xaml.cs",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\Pages\\BudgetPage.xaml.cs",
+              "RelativeToolTip": "CSC317_Tracker\\Pages\\BudgetPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:01:44.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\App.xaml",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\App.xaml",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\App.xaml",
+              "RelativeToolTip": "CSC317_Tracker\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T20:00:52.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\App.xaml.cs",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\App.xaml.cs",
+              "RelativeToolTip": "CSC317_Tracker\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:00:51.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\AppShell.xaml.cs",
+              "RelativeToolTip": "CSC317_Tracker\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:00:33.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\AppShell.xaml",
+              "RelativeDocumentMoniker": "CSC317_Tracker\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\AppShell.xaml",
+              "RelativeToolTip": "CSC317_Tracker\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-21T19:53:57.511Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
