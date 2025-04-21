@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZDVUrwvYf+0=",
+  "dgSpecHash": "XIj+6jblVwU=",
   "success": true,
   "projectFilePath": "/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/CSC317_Tracker.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,10 @@
     "/Users/rashika/.nuget/packages/xamarin.kotlinx.coroutines.core/1.8.1.3/xamarin.kotlinx.coroutines.core.1.8.1.3.nupkg.sha512",
     "/Users/rashika/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.8.1.3/xamarin.kotlinx.coroutines.core.jvm.1.8.1.3.nupkg.sha512",
     "/Users/rashika/.nuget/packages/xamarin.kotlinx.serialization.core/1.7.1.3/xamarin.kotlinx.serialization.core.1.7.1.3.nupkg.sha512",
-    "/Users/rashika/.nuget/packages/xamarin.kotlinx.serialization.core.jvm/1.7.1.3/xamarin.kotlinx.serialization.core.jvm.1.7.1.3.nupkg.sha512"
+    "/Users/rashika/.nuget/packages/xamarin.kotlinx.serialization.core.jvm/1.7.1.3/xamarin.kotlinx.serialization.core.jvm.1.7.1.3.nupkg.sha512",
+    "/Users/rashika/.nuget/packages/microsoft.netcore.app.ref/9.0.4/microsoft.netcore.app.ref.9.0.4.nupkg.sha512",
+    "/Users/rashika/.nuget/packages/microsoft.netcore.app.ref/9.0.4/microsoft.netcore.app.ref.9.0.4.nupkg.sha512",
+    "/Users/rashika/.nuget/packages/microsoft.netcore.app.ref/9.0.4/microsoft.netcore.app.ref.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

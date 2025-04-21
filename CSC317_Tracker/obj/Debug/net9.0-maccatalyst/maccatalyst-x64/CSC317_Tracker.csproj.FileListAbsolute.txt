@@ -284,20 +284,6 @@
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/_ProcessedBundleResourcesPath.items
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/_ProcessedContentPath.items
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.csproj.AssemblyReference.cache
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Configuration.Abstractions.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Configuration.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.DependencyInjection.Abstractions.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.DependencyInjection.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Logging.Abstractions.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Logging.Debug.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Logging.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Options.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Extensions.Primitives.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Maui.Controls.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Maui.Controls.Xaml.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Maui.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Maui.Essentials.stamp
-/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/resourcestamps/Microsoft.Maui.Graphics.stamp
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.GeneratedMSBuildEditorConfig.editorconfig
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.AssemblyInfoInputs.cache
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.AssemblyInfo.cs
@@ -309,3 +295,4 @@
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.pdb
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.genruntimeconfig.cache
 /Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/ref/CSC317_Tracker.dll
+/Users/rashika/Desktop/sdk/CSC317_Tracker/CSC317_Tracker/obj/Debug/net9.0-maccatalyst/maccatalyst-x64/CSC317_Tracker.sourcelink.json

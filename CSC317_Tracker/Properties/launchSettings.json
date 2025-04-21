@@ -3,6 +3,11 @@
     "Windows Machine": {
       "commandName": "Project",
       "nativeDebugging": false
+    },
+    "MacCatalyst": {
+      "commandName": "Project",
+      "targetFramework": "net9.0-maccatalyst",
+      "runtimeIdentifier": "maccatalyst-x64"
     }
   }
 }

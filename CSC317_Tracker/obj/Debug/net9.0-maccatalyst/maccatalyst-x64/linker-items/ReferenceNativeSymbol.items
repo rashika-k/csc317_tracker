@@ -1177,6 +1177,9 @@
     <ReferenceNativeSymbol Include="_OBJC_CLASS_$_XamarinSwiftFunctions">
       <SymbolType>ObjectiveCClass</SymbolType>
     </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_xamarin_os_log">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_xamarin_release_managed_ref">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
@@ -1214,9 +1217,6 @@
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_xamarin_init_nsthread">
-      <SymbolType>Function</SymbolType>
-    </ReferenceNativeSymbol>
-    <ReferenceNativeSymbol Include="_xamarin_os_log">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_xamarin_UIApplicationMain">
