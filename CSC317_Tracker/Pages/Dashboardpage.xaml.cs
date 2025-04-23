@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace CSC317_Tracker.Pages;
 public partial class DashboardPage : ContentPage
 {

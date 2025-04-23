@@ -4,8 +4,9 @@
              Title="Settings">
 
     <VerticalStackLayout Padding="20">
-        <Label Text="Settings Content Here" 
-               FontSize="20" 
-               HorizontalOptions="Center" />
+        <Picker Title="Select Theme"
+        ItemsSource="{Binding Themes}"
+        SelectedItem="{Binding SelectedTheme}"
+        />
     </VerticalStackLayout>
 </ContentPage>
