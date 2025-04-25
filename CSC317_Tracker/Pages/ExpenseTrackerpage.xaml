@@ -3,25 +3,34 @@
              x:Class="CSC317_Tracker.Pages.ExpenseTrackerPage"
              Title="ExpenseTracker">
 
-    <VerticalStackLayout Padding="70" Spacing="10">
-        <Label Text="This Month" FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
-        <Grid Padding="10" Margin="25, 50"
-      RowDefinitions="200,200"
-      ColumnDefinitions="*,*">
-            <!-- This Month's Expenses -->
-            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3"
-            BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#272626}"
-            StrokeThickness="10"
-            Stroke="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
-            StrokeShape="RoundRectangle 15"
-            Margin="0"
-            HorizontalOptions="Fill" VerticalOptions="Fill">
-                <ScrollView>
-                    <Label Text="Date" FontSize="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
-                </ScrollView>
-            </Border>
-        </Grid>
+    <VerticalStackLayout Padding="20" Spacing="15">
 
-        <Button Text="Add Expense" Clicked="AddEx"/>
+        <!-- Table Header -->
+        <CollectionView ItemsSource="{Binding Expenses}" Margin="0,20,0,0">
+            <CollectionView.Header>
+                <Grid ColumnDefinitions="2*,2*,1*" Padding="5">
+                    <Label Text="Date" FontAttributes="Bold" />
+                    <Label Text="Category" FontAttributes="Bold" />
+                    <Label Text="Amount" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+                </Grid>
+            </CollectionView.Header>
+
+            <!-- Item Template -->
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="2*,2*,1*" Padding="5">
+                        <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" />
+                        <Label Text="{Binding Category}" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}"/>
+                        <Label Text="{Binding Amount, StringFormat='${0:F2}'}" HorizontalTextAlignment="End" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <!-- User Input -->
+        <DatePicker x:Name="DatePicker" />
+        <Entry x:Name="CategoryInput" Placeholder="Enter category" />
+        <Entry x:Name="AmountInput" Placeholder="Enter amount" Keyboard="Numeric" />
+        <Button Text="Add Expense" Clicked="OnAddClicked" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"/>
     </VerticalStackLayout>
+
 </ContentPage>

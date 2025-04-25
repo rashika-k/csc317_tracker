@@ -6,7 +6,7 @@ public partial class ExpenseTrackerPage : ContentPage
         InitializeComponent();
     }
 
-    private void AddEx(object sender, EventArgs e)
+    private void OnAddClicked(object sender, EventArgs e)
     {
 
     }

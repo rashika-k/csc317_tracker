@@ -3,8 +3,8 @@
              x:Class="CSC317_Tracker.Pages.DashboardPage"
              Title="Dashboard">
     <VerticalStackLayout Padding="100" Spacing="10">
-        <Label Text="{Binding CurrentDate}" FontSize="27" TextColor="White" HorizontalOptions="Center" Margin="10, 20, 10, 0"/>
-        <Label Text="This Month" FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
+        <Label Text="{Binding CurrentDate}" FontSize="27" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Center" Margin="10, 20, 10, 0"/>
+        <Label Text="This Month" FontSize="25" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
         <Grid Padding="10" Margin="25, 50"
           RowDefinitions="200,200"
           ColumnDefinitions="*,*">
