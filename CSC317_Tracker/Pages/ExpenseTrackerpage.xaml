@@ -9,13 +9,13 @@
         <CollectionView ItemsSource="{Binding Expenses}" Margin="0,20,0,0">
             <CollectionView.Header>
                 <Grid ColumnDefinitions="2*,2*,1*" Padding="5">
-                    <Label Text="Date" FontAttributes="Bold" />
-                    <Label Text="Category" FontAttributes="Bold" />
+                    <Label Text="Date" FontAttributes="Bold"  />
+                    <Label Text="Category" FontAttributes="Bold" HorizontalTextAlignment="Center" />
                     <Label Text="Amount" FontAttributes="Bold" HorizontalTextAlignment="End"/>
                 </Grid>
             </CollectionView.Header>
 
-            <!-- Item Template -->
+            <!-- Items input -->
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid ColumnDefinitions="2*,2*,1*" Padding="5">

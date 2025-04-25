@@ -4,11 +4,33 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Android.Database;
+using CSC317_Tracker.Models;
+using System.Collections.ObjectModel;
+//using static CSC317_Tracker.Models.ExpenseTrackerModel;
+
 
 namespace CSC317_Tracker.Controllers
 {
-    class ExpenseTrackerController
+    class ExpenseTrackerController : INotifyPropertyChanged
     {
+        public ObservableCollection<ExpenseTrackerModel> ExpenseTrackerModels { get; } = new ObservableCollection<ExpenseTrackerModel>();
 
+        public void AddExpense(DateTime date, string category, decimal amount)
+        {
+            if (!string.IsNullOrWhiteSpace(category) && amount > 0)
+            {
+                ExpenseTrackerModels.Add(new ExpenseTrackerModel
+                {
+                    Date = date,
+                    Category = category,
+                    Amount = amount
+
+                });
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string propertyName)
+           => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
