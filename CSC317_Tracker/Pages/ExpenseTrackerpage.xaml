@@ -3,9 +3,25 @@
              x:Class="CSC317_Tracker.Pages.ExpenseTrackerPage"
              Title="ExpenseTracker">
 
-    <VerticalStackLayout Padding="20">
-        <Label Text="ExpenseTracker Content Here" 
-               FontSize="20" 
-               HorizontalOptions="Center" />
+    <VerticalStackLayout Padding="70" Spacing="10">
+        <Label Text="This Month" FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
+        <Grid Padding="10" Margin="25, 50"
+      RowDefinitions="200,200"
+      ColumnDefinitions="*,*">
+            <!-- This Month's Expenses -->
+            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3"
+            BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#272626}"
+            StrokeThickness="10"
+            Stroke="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
+            StrokeShape="RoundRectangle 15"
+            Margin="0"
+            HorizontalOptions="Fill" VerticalOptions="Fill">
+                <ScrollView>
+                    <Label Text="Date" FontSize="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                </ScrollView>
+            </Border>
+        </Grid>
+
+        <Button Text="Add Expense" Clicked="AddEx"/>
     </VerticalStackLayout>
 </ContentPage>

@@ -2,40 +2,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CSC317_Tracker.Pages.DashboardPage"
              Title="Dashboard">
-    <VerticalStackLayout Padding="20" Spacing="10">
-        <Label Text="This Month" FontSize="30" TextColor="White" HorizontalOptions="Center" />
-
-        <Grid Padding="10" Margin="25, 100"
-          RowDefinitions="100,100"
+    <VerticalStackLayout Padding="100" Spacing="10">
+        <Label Text="{Binding CurrentDate}" FontSize="27" TextColor="White" HorizontalOptions="Center" Margin="10, 20, 10, 0"/>
+        <Label Text="This Month" FontSize="25" TextColor="White" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
+        <Grid Padding="10" Margin="25, 50"
+          RowDefinitions="200,200"
           ColumnDefinitions="*,*">
-            <!-- Box 1 -->
+            <!-- This Month's Expenses -->
             <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
                 BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
                 StrokeThickness="0"
                 StrokeShape="RoundRectangle 15"
-                Margin="5"
+                Margin="0"
                 HorizontalOptions="Fill" VerticalOptions="Fill">
-                <Label Text="Box 1" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                <ScrollView>
+                    <Label Text="This Month's Expenses" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                </ScrollView>
             </Border>
 
-            <!-- Box 2 -->
+            <!-- Current Savings: -->
             <Border Grid.Row="0" Grid.Column="1"
                 BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
                 StrokeThickness="0"
                 StrokeShape="RoundRectangle 15"
-                Margin="5"
+                Margin="13"
                 HorizontalOptions="Fill" VerticalOptions="Fill">
-                <Label Text="Box 2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                <Label Text="Current Savings: " FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
             </Border>
 
-            <!-- Box 4 -->
+            <!-- Budget Left: -->
             <Border Grid.Row="1" Grid.Column="1"
                 BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
                 StrokeThickness="0"
                 StrokeShape="RoundRectangle 15"
-                Margin="5"
+                Margin="13"
                 HorizontalOptions="Fill" VerticalOptions="Fill">
-                <Label Text="Box 4" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                <Label Text="Budget Left:" FontSize="20"  HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
             </Border>
         </Grid>
     </VerticalStackLayout>

@@ -5,4 +5,9 @@ public partial class ExpenseTrackerPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void AddEx(object sender, EventArgs e)
+    {
+
+    }
 }
