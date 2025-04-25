@@ -7,6 +7,8 @@
     xmlns:pages="clr-namespace:CSC317_Tracker.Pages"
     Shell.FlyoutBehavior="Disabled"
     Shell.NavBarIsVisible="False"
+    Shell.TabBarBackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
+    Shell.BackgroundColor="{AppThemeBinding Light=#ffffff Dark=#272626}"
     Title="CSC317_Tracker">
 
     <TabBar x:Name="Navig">

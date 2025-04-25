@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\CSC317_Tracker.csproj": {}
+    "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\MoneyManger\\CSC317_Tracker\\CSC317_Tracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\CSC317_Tracker.csproj": {
+    "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\MoneyManger\\CSC317_Tracker\\CSC317_Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\CSC317_Tracker.csproj",
+        "projectUniqueName": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\MoneyManger\\CSC317_Tracker\\CSC317_Tracker.csproj",
         "projectName": "CSC317_Tracker",
-        "projectPath": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\CSC317_Tracker.csproj",
+        "projectPath": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\MoneyManger\\CSC317_Tracker\\CSC317_Tracker.csproj",
         "packagesPath": "C:\\Users\\chach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\Money Tracker\\CSC317_Tracker\\obj\\",
+        "outputPath": "C:\\Users\\chach\\OneDrive\\Documents\\2025 Spring\\MoneyManger\\CSC317_Tracker\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
