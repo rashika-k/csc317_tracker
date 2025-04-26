@@ -1,7 +1,7 @@
 CSC317_Tracker
 CSC317_Tracker is a budgeting and expense-tracking application built with .NET MAUI. It provides users with a streamlined way to manage finances, track goals, monitor statistics, and customize settings—all in a clean and responsive UI.
 
-📄 Documentation
+Documentation
 This project includes the following documentation:
 
 Model Descriptions: Includes core models such as DashboardModel, GoalsModel, and SettingsModel, each of which binds to specific pages for user data management.
@@ -89,7 +89,7 @@ Edit
     }
   ]
 }
-📦 Features
+Features
 Dashboard with dynamic date display
 
 Expense input and category-based list rendering
@@ -102,7 +102,7 @@ Chart-based visualizations (Pie/Bar via Microcharts)
 
 User settings with theme, birthday, email, and currency
 
-📌 Notes
+Notes
 Ensure you use InitializeComponent() inside each ContentPage constructor.
 
 Microcharts visualizations require SkiaSharp, so version mismatches must be avoided.
