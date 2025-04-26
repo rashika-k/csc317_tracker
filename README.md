@@ -26,7 +26,7 @@ Visual Studio 2022 or 2023 with the .NET MAUI workload installed or VS code
 
 (Optional) Android/iOS emulators or a Windows 10+ device for testing
 
-🛠️ Setup Steps
+Setup Steps
 Clone or Download the Repository
 
 bash
