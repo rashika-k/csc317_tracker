@@ -1,35 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using Android.Database;
 using CSC317_Tracker.Models;
-using System.Collections.ObjectModel;
-//using static CSC317_Tracker.Models.ExpenseTrackerModel;
-
 
 namespace CSC317_Tracker.Controllers
 {
-    class ExpenseTrackerController : INotifyPropertyChanged
+    public class StatisticsController
     {
-        public ObservableCollection<ExpenseTrackerModel> Expenses { get; } = new ObservableCollection<ExpenseTrackerModel>();
-
-        public void AddExpense(DateTime date, string category, decimal amount)
+        public List<Expense> GetExpenses()
         {
-            if (!string.IsNullOrEmpty(category) && amount > 0)
+            return new List<Expense>
             {
-                Expenses.Add(new ExpenseTrackerModel
-                {
-                    Date = date,
-                    Category = category,
-                    Amount = amount
-                });
-            }
+                new Expense { Category = "Food", Amount = 150 },
+                new Expense { Category = "Transportation", Amount = 80 },
+                new Expense { Category = "Entertainment", Amount = 60 },
+                new Expense { Category = "Bills", Amount = 200 },
+                new Expense { Category = "Others", Amount = 40 }
+            };
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-           => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
