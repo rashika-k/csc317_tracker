@@ -9,3 +9,43 @@
                HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
+ public BudgetForm()
+        {
+            InitializeComponents();
+        }
+
+        private void InitializeComponents()
+        {
+            this.Text = "Budget Page";
+            this.Width = 650;
+            this.Height = 400;
+
+
+string[] menuItems = { "Dashboard", "Add Expenses", "Budget", "Goals", "Statistics", "Setting" };
+int xPos = 10;
+foreach (var item in menuItems)
+{
+    Button btn = new Button();
+    btn.Text = item;
+    btn.Left = xPos;
+    btn.Top = 10;
+    btn.Width = 90;
+    form.Controls.Add(btn);
+    xPos += 95;
+}
+Label lblBudget = new Label() { Text = "Enter Budget:", Left = 50, Top = 80, Width = 100 };
+            TextBox txtBudget = new TextBox() { Left = 180, Top = 80, Width = 100, Name = "txtBudget" };
+
+            Label lblNecessities = new Label() { Text = "Necessities:", Left = 50, Top = 120, Width = 100 };
+            TextBox txtNecessities = new TextBox() { Left = 180, Top = 120, Width = 100, Name = "txtNecessities" };
+
+            Label lblMeals = new Label() { Text = "Meals:", Left = 50, Top = 160, Width = 100 };
+            TextBox txtMeals = new TextBox() { Left = 180, Top = 160, Width = 100, Name = "txtMeals" };
+
+            Label lblMisc = new Label() { Text = "Miscellaneous:", Left = 50, Top = 200, Width = 100 };
+            TextBox txtMisc = new TextBox() { Left = 180, Top = 200, Width = 100, Name = "txtMisc" };
+
+            Button btnCalculate = new Button() { Text = "Calculate", Left = 180, Top = 240, Width = 100 };
+            btnCalculate.Click += BtnCalculate_Click;
+
+            Label lblResult = new Label() { Text = "Remaining Budget: ", Left = 50, Top = 280, Width = 300, Name = "lblResult" };
