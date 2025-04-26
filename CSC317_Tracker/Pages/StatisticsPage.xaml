@@ -1,11 +1,25 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CSC317_Tracker.Pages.StatisticsPage"
-             Title="Statistics">
+<ContentPage
+    x:Class="CSC317_Tracker.Pages.StatisticsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    Title="Statistics">
 
-    <VerticalStackLayout Padding="20">
-        <Label Text="Statistics Content Here" 
-               FontSize="20" 
-               HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+            <Label Text="Statistics" FontSize="32" HorizontalOptions="Center" />
+
+            <Label Text="Spending Overview (Pie Chart)" FontSize="20" />
+
+            <microcharts:ChartView
+                x:Name="PieChart"
+                HeightRequest="250" />
+
+            <Label Text="Spending by Category (Bar Chart)" FontSize="20" />
+
+            <microcharts:ChartView
+                x:Name="BarChart"
+                HeightRequest="250" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
