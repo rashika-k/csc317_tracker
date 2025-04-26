@@ -1,12 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CSC317_Tracker.Pages.SettingsPage"
              Title="Settings">
 
-    <VerticalStackLayout Padding="20">
-        <Picker Title="Select Theme"
-        ItemsSource="{Binding Themes}"
-        SelectedItem="{Binding SelectedTheme}"
-        />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
+
+            <!-- Personal Information -->
+            <Label Text="Personal Information" FontSize="24" TextColor="White" HorizontalOptions="Start"/>
+
+            <!-- Name -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 15" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" Padding="20">
+                <VerticalStackLayout>
+                    <Label Text="Enter Name:" FontSize="18" TextColor="White"/>
+                    <Entry Placeholder="Your Name" Text="{Binding UserName}" BackgroundColor="White" TextColor="Black"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Email -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 15" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" Padding="20">
+                <VerticalStackLayout>
+                    <Label Text="Enter Email:" FontSize="18" TextColor="White"/>
+                    <Entry Placeholder="Your Email" Text="{Binding UserEmail}" BackgroundColor="White" TextColor="Black"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Birthday -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 15" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" Padding="20">
+                <VerticalStackLayout>
+                    <Label Text="Enter Birthdate:" FontSize="18" TextColor="White"/>
+                    <DatePicker Date="{Binding UserBirthday}" BackgroundColor="White" TextColor="Black"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Preferred Currency -->
+            <Label Text="Preferred Currency" FontSize="24" TextColor="White" HorizontalOptions="Start"/>
+            <Picker SelectedItem="{Binding SelectedCurrency}" Title="Select Currency" BackgroundColor="White" TextColor="Black">
+                <Picker.Items>
+                    <x:String>USD</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>GBP</x:String>
+                    <x:String>INR</x:String>
+                    <!-- Add more currency options as needed -->
+                </Picker.Items>
+            </Picker>
+
+            <!-- Theme Selection -->
+            <Label Text="App Theme" FontSize="24" TextColor="White" HorizontalOptions="Start"/>
+            <Picker SelectedItem="{Binding SelectedTheme}" Title="Select Theme" BackgroundColor="White" TextColor="Black">
+                <Picker.Items>
+                    <x:String>Light</x:String>
+                    <x:String>Dark</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Save Settings" Clicked="OnSaveSettingsClicked" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

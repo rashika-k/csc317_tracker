@@ -14,18 +14,17 @@ namespace CSC317_Tracker.Controllers
 {
     class ExpenseTrackerController : INotifyPropertyChanged
     {
-        public ObservableCollection<ExpenseTrackerModel> ExpenseTrackerModels { get; } = new ObservableCollection<ExpenseTrackerModel>();
+        public ObservableCollection<ExpenseTrackerModel> Expenses { get; } = new ObservableCollection<ExpenseTrackerModel>();
 
         public void AddExpense(DateTime date, string category, decimal amount)
         {
-            if (!string.IsNullOrWhiteSpace(category) && amount > 0)
+            if (!string.IsNullOrEmpty(category) && amount > 0)
             {
-                ExpenseTrackerModels.Add(new ExpenseTrackerModel
+                Expenses.Add(new ExpenseTrackerModel
                 {
                     Date = date,
                     Category = category,
                     Amount = amount
-
                 });
             }
         }

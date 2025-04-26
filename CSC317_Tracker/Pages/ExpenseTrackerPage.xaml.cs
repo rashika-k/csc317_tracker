@@ -13,12 +13,14 @@ public partial class ExpenseTrackerPage : ContentPage
 
     private void OnAddClicked(object sender, EventArgs e)
     {
+        if (string.IsNullOrWhiteSpace(CategoryInput.Text) || string.IsNullOrWhiteSpace(AmountInput.Text))
+            return;
         if (decimal.TryParse(AmountInput.Text, out decimal amount))
         {
             controller.AddExpense(DatePicker.Date, CategoryInput.Text, amount);
 
-            CategoryInput.Text = string.Empty;
-            AmountInput.Text = string.Empty;
+            CategoryInput.Text = "";
+            AmountInput.Text = "";
         }
     }
 }

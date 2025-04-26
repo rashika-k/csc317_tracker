@@ -2,45 +2,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CSC317_Tracker.Pages.DashboardPage"
              Title="Dashboard">
-    <VerticalStackLayout Padding="100" Spacing="10">
-        <Label Text="{Binding CurrentDate}" FontSize="27" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Center" Margin="10, 20, 10, 0"/>
-        <Label Text="This Month" FontSize="25" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
-        <Grid Padding="10" Margin="25, 50"
-          RowDefinitions="200,200"
-          ColumnDefinitions="*,*">
-            <!-- This Month's Expenses -->
-            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
-                BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
-                StrokeThickness="0"
-                StrokeShape="RoundRectangle 15"
-                Margin="0"
-                HorizontalOptions="Fill" VerticalOptions="Fill">
-                <ScrollView>
-                    <Label Text="This Month's Expenses" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
-                </ScrollView>
-            </Border>
+    <ScrollView>
+        <VerticalStackLayout Padding="100" Spacing="10">
+            <Label Text="{Binding CurrentDate}" FontSize="27" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Center" Margin="10, 20, 10, 0"/>
+            <Label Text="This Month" FontSize="25" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" HorizontalOptions="Start" Margin="40, 0, 10, 0"/>
+            <Grid Padding="10" Margin="25, 50"
+              RowDefinitions="200,200"
+              ColumnDefinitions="*,*">
+                <!-- This Month's Expenses -->
+                <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
+                    BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15"
+                    Margin="0"
+                    HorizontalOptions="Fill" VerticalOptions="Fill">
+                    <ScrollView>
+                        <Label Text="This Month's Expenses" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                    </ScrollView>
+                </Border>
 
-            <!-- Current Savings: -->
-            <Border Grid.Row="0" Grid.Column="1"
-                BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
-                StrokeThickness="0"
-                StrokeShape="RoundRectangle 15"
-                Margin="13"
-                HorizontalOptions="Fill" VerticalOptions="Fill">
-                <Label Text="Current Savings: " FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
-            </Border>
+                <!-- Current Savings: -->
+                <Border Grid.Row="0" Grid.Column="1"
+                    BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15"
+                    Margin="13"
+                    HorizontalOptions="Fill" VerticalOptions="Fill">
+                    <Label Text="Current Savings: " FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                </Border>
 
-            <!-- Budget Left: -->
-            <Border Grid.Row="1" Grid.Column="1"
-                BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
-                StrokeThickness="0"
-                StrokeShape="RoundRectangle 15"
-                Margin="13"
-                HorizontalOptions="Fill" VerticalOptions="Fill">
-                <Label Text="Budget Left:" FontSize="20"  HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
-            </Border>
-        </Grid>
-    </VerticalStackLayout>
-
+                <!-- Budget Left: -->
+                <Border Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15"
+                    Margin="13"
+                    HorizontalOptions="Fill" VerticalOptions="Fill">
+                    <Label Text="Budget Left:" FontSize="20"  HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                </Border>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
