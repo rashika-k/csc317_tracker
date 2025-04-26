@@ -1,11 +1,28 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CSC317_Tracker.Pages.GoalsPage"
              Title="Goals">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
 
-    <VerticalStackLayout Padding="20">
-        <Label Text="Goals Content Here" 
-               FontSize="20" 
-               HorizontalOptions="Center" />
-    </VerticalStackLayout>
+            <!-- Monthly Goal Box -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 15" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" Padding="20">
+                <VerticalStackLayout>
+                    <Label Text="Monthly Goal:" FontSize="20" TextColor="White"/>
+                    <Entry Placeholder="Enter monthly goal" Keyboard="Numeric" Text="{Binding MonthlyGoal}" BackgroundColor="White" TextColor="Black" />
+                    <ProgressBar Progress="{Binding MonthlyProgress}" HeightRequest="20" Margin="0,10,0,0"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Annual Goal Box -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 15" BackgroundColor="{AppThemeBinding Light=#587b4a, Dark=#568ea3}" Padding="20">
+                <VerticalStackLayout>
+                    <Label Text="Annual Goal:" FontSize="20" TextColor="White"/>
+                    <Entry Placeholder="Enter annual goal" Keyboard="Numeric" Text="{Binding AnnualGoal}" BackgroundColor="White" TextColor="Black" />
+                    <ProgressBar Progress="{Binding AnnualProgress}" HeightRequest="20" Margin="0,10,0,0"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
