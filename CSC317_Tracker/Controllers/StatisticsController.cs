@@ -1,20 +1,26 @@
-
-﻿using CSC317_Tracker.Models;
+using CSC317_Tracker.Models;
 
 namespace CSC317_Tracker.Controllers
 {
     public class StatisticsController
     {
-        public List<Expense> GetExpenses()
+        public StatisticsModel GetDummyStatistics()
         {
-            return new List<Expense>
+            var stats = new StatisticsModel
             {
-                new Expense { Category = "Food", Amount = 150 },
-                new Expense { Category = "Transportation", Amount = 80 },
-                new Expense { Category = "Entertainment", Amount = 60 },
-                new Expense { Category = "Bills", Amount = 200 },
-                new Expense { Category = "Others", Amount = 40 }
+                TotalIncome = 5000,
+                TotalExpenses = 3200,
+                CategoryExpenses = new Dictionary<string, float>
+                {
+                    { "Food", 800 },
+                    { "Rent", 1500 },
+                    { "Utilities", 400 },
+                    { "Entertainment", 300 },
+                    { "Transportation", 200 }
+                }
             };
+
+            return stats;
         }
     }
 }
