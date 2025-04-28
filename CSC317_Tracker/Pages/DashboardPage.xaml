@@ -17,7 +17,27 @@
                     Margin="0"
                     HorizontalOptions="Fill" VerticalOptions="Fill">
                     <ScrollView>
-                        <Label Text="This Month's Expenses" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                        <VerticalStackLayout>
+                            <Label Text="This Month's Expenses" FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                            <CollectionView>
+                                <CollectionView.Header>
+                                    <Grid ColumnDefinitions="500*, 20" Padding="20" Margin="5,0,0,200">
+                                        <Label Text="Date" FontAttributes="Bold" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" />
+                                        <Label Text="Category" FontAttributes="Bold" HorizontalOptions="Center" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" />
+                                        <Label Text="Amount" FontAttributes="Bold" HorizontalTextAlignment="End" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" />
+                                    </Grid>
+                                </CollectionView.Header>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid ColumnDefinitions="500*, 20" Padding="20" Margin="5,0,0,200">
+                                            <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}" />
+                                            <Label Text="{Binding Category}" TextColor="{AppThemeBinding Light=#272626, Dark=White}" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding Amount, StringFormat='${0:F2}'}" HorizontalTextAlignment="End" TextColor="{AppThemeBinding Light=#272626, Dark=#ffffff}"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
                     </ScrollView>
                 </Border>
 
@@ -28,7 +48,10 @@
                     StrokeShape="RoundRectangle 15"
                     Margin="13"
                     HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Label Text="Current Savings: " FontSize="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                    <VerticalStackLayout>
+                        <Label Text="Current Savings: " FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                        <Label Text="$1,000.00" FontSize="40"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </VerticalStackLayout>
                 </Border>
 
                 <!-- Budget Left: -->
@@ -38,7 +61,10 @@
                     StrokeShape="RoundRectangle 15"
                     Margin="13"
                     HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Label Text="Budget Left:" FontSize="20"  HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                    <VerticalStackLayout>
+                        <Label Text="Budget Left:" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Start" Margin="10, 20, 10, 10" TextColor="White" />
+                        <Label Text="$5.00" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </VerticalStackLayout>
                 </Border>
             </Grid>
         </VerticalStackLayout>
