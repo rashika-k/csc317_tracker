@@ -14,6 +14,8 @@ namespace CSC317_Tracker.Controllers
 {
     class ExpenseTrackerController : INotifyPropertyChanged
     {
+        private static ExpenseTrackerController _instance;
+        public static  ExpenseTrackerController Instance => _instance ??= new ExpenseTrackerController();
         public ObservableCollection<ExpenseTrackerModel> Expenses { get; } = new ObservableCollection<ExpenseTrackerModel>();
 
         public void AddExpense(DateTime date, string category, decimal amount)

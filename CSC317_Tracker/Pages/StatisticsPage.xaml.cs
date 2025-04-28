@@ -14,7 +14,7 @@ namespace CSC317_Tracker.Pages
         public StatisticsPage()
         {
             InitializeComponent();
-            _expenseController = new ExpenseTrackerController(); 
+            _expenseController = ExpenseTrackerController.Instance; 
             LoadCharts();
         }
 

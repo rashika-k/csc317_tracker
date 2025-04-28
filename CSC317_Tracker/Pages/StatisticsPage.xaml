@@ -14,28 +14,32 @@
                    HorizontalOptions="Center"
                    TextColor="{AppThemeBinding Light=Black, Dark=White}" />
                    
-            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto" Padding="10" ColumnSpacing="30">
-                <microcharts:ChartView x:Name="BarChart"
-                                        HeightRequest="300"
-                                        WidthRequest="300"
-                                        Grid.Column="0"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center" />
-                <microcharts:ChartView x:Name="PieChart"
-                                        HeightRequest="300"
-                                        WidthRequest="300"
-                                        Grid.Column="1"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center" />
-                <StackLayout x:Name="PieLegend"
-                    Padding="10"
-                    Spacing="5"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center">
-                </StackLayout>
+          <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" Padding="10" ColumnSpacing="30" RowSpacing="10">
+            <microcharts:ChartView x:Name="BarChart"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    Grid.Column="0"
+                                    Grid.RowSpan="2"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
 
+            <microcharts:ChartView x:Name="PieChart"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                                    Grid.Column="1"
+                                    Grid.Row="0"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
 
-            </Grid>
+            <StackLayout x:Name="PieLegend"
+                        Padding="10"
+                        Spacing="5"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        HorizontalOptions="Center">
+            </StackLayout>
+        </Grid>
+
         </StackLayout>
     </ScrollView>
 </ContentPage>

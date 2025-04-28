@@ -7,7 +7,7 @@ public partial class ExpenseTrackerPage : ContentPage
     public ExpenseTrackerPage()
     {
         InitializeComponent();
-        controller = new ExpenseTrackerController();
+        controller = ExpenseTrackerController.Instance;
         BindingContext = controller;
     }
 
