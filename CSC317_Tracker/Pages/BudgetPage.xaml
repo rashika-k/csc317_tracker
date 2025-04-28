@@ -9,96 +9,56 @@
                HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
-namespace BudgetApp
-{
-    public partial class BudgetForm : Form
-    {
-        // --- Frontend Development (GUI Elements) ---
-        private TextBox txtBudget;
-        private TextBox txtNecessities;
-        private TextBox txtMiscellaneous;
-        private TextBox txtOther;
-        private TextBox txtMeals;
-        private TextBox txtFood;
-        private Label lblResult;
-        private Button btnCalculate;
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="BudgetCalculatorApp.BudgetPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
 
-        private MenuStrip menuStrip;
-        private ToolStripMenuItem dashboardMenuItem;
-        private ToolStripMenuItem addExpensesMenuItem;
-        private ToolStripMenuItem budgetMenuItem;
-        private ToolStripMenuItem goalsMenuItem;
-        private ToolStripMenuItem statisticsMenuItem;
-        private ToolStripMenuItem settingsMenuItem;
+    <!-- Main Layout -->
+    <Grid Padding="20">
+        
+        <!-- Header with menu -->
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="StartAndExpand">
+            <Button Text="Dashboard" />
+            <Button Text="Add Expenses" />
+            <Button Text="Budget" />
+            <Button Text="Goals" />
+            <Button Text="Statistics" />
+            <Button Text="Setting" />
+        </StackLayout>
 
-        public BudgetForm()
-        {
-            InitializeComponent();
-        }
+        <!-- Budget and Expenses Section -->
+        <StackLayout Padding="20, 40, 20, 20">
+            
+            <Label Text="Enter Your Budget" FontSize="Medium" HorizontalOptions="Center"/>
+            <Entry x:Name="BudgetEntry" Placeholder="Enter budget" Keyboard="Numeric" />
+            
+            <Label Text="Enter Expenses" FontSize="Medium" HorizontalOptions="Center"/>
+            
+            <Label Text="Necessities" />
+            <Entry x:Name="NecessitiesEntry" Placeholder="Enter necessities expense" Keyboard="Numeric" />
 
-        private void InitializeComponent()
-        {
-            this.Text = "Budget Calculator";
-            this.Width = 500;
-            this.Height = 500;
+            <Label Text="Miscellaneous" />
+            <Entry x:Name="MiscellaneousEntry" Placeholder="Enter miscellaneous expense" Keyboard="Numeric" />
 
-            // --- Menu ---
-            menuStrip = new MenuStrip();
-            dashboardMenuItem = new ToolStripMenuItem("Dashboard");
-            addExpensesMenuItem = new ToolStripMenuItem("Add Expenses");
-            budgetMenuItem = new ToolStripMenuItem("Budget");
-            goalsMenuItem = new ToolStripMenuItem("Goals");
-            statisticsMenuItem = new ToolStripMenuItem("Statistics");
-            settingsMenuItem = new ToolStripMenuItem("Settings");
+            <Label Text="Other" />
+            <Entry x:Name="OtherEntry" Placeholder="Enter other expenses" Keyboard="Numeric" />
 
-            menuStrip.Items.Add(dashboardMenuItem);
-            menuStrip.Items.Add(addExpensesMenuItem);
-            menuStrip.Items.Add(budgetMenuItem);
-            menuStrip.Items.Add(goalsMenuItem);
-            menuStrip.Items.Add(statisticsMenuItem);
-            menuStrip.Items.Add(settingsMenuItem);
-            this.MainMenuStrip = menuStrip;
-            this.Controls.Add(menuStrip);
+            <Label Text="Meals/Food" />
+            <Entry x:Name="FoodEntry" Placeholder="Enter food expense" Keyboard="Numeric" />
 
-            // --- Input Fields ---
-            Label lblBudget = new Label() { Text = "Enter Budget:", Top = 50, Left = 30, Width = 100 };
-            txtBudget = new TextBox() { Top = 50, Left = 150, Width = 200 };
+            <Button Text="Calculate" Clicked="OnCalculateButtonClicked" HorizontalOptions="Center" />
+            
+            <!-- Results Section -->
+            <StackLayout Padding="20">
+                <Label x:Name="RemainingBudgetLabel" Text="Remaining Budget: " FontSize="Medium"/>
+                <Label x:Name="ExpensesTotalLabel" Text="Total Expenses: " FontSize="Medium"/>
+                <Label x:Name="BalanceLabel" Text="Balance: " FontSize="Medium"/>
+            </StackLayout>
 
-            Label lblNecessities = new Label() { Text = "Necessities:", Top = 90, Left = 30, Width = 100 };
-            txtNecessities = new TextBox() { Top = 90, Left = 150, Width = 200 };
+        </StackLayout>
 
-            Label lblMiscellaneous = new Label() { Text = "Miscellaneous:", Top = 130, Left = 30, Width = 100 };
-            txtMiscellaneous = new TextBox() { Top = 130, Left = 150, Width = 200 };
+    </Grid>
+</ContentPage>
 
-            Label lblOther = new Label() { Text = "Other:", Top = 170, Left = 30, Width = 100 };
-            txtOther = new TextBox() { Top = 170, Left = 150, Width = 200 };
-
-            Label lblMeals = new Label() { Text = "Meals:", Top = 210, Left = 30, Width = 100 };
-            txtMeals = new TextBox() { Top = 210, Left = 150, Width = 200 };
-
-            Label lblFood = new Label() { Text = "Food:", Top = 250, Left = 30, Width = 100 };
-            txtFood = new TextBox() { Top = 250, Left = 150, Width = 200 };
-
-            // --- Calculate Button ---
-            btnCalculate = new Button() { Text = "Calculate Budget", Top = 300, Left = 150, Width = 150 };
-            btnCalculate.Click += BtnCalculate_Click;
-
-            // --- Result Label ---
-            lblResult = new Label() { Text = "Remaining Budget: $0.00", Top = 350, Left = 30, Width = 400 };
-
-            // --- Adding controls to the form ---
-            this.Controls.Add(lblBudget);
-            this.Controls.Add(txtBudget);
-            this.Controls.Add(lblNecessities);
-            this.Controls.Add(txtNecessities);
-            this.Controls.Add(lblMiscellaneous);
-            this.Controls.Add(txtMiscellaneous);
-            this.Controls.Add(lblOther);
-            this.Controls.Add(txtOther);
-            this.Controls.Add(lblMeals);
-            this.Controls.Add(txtMeals);
-            this.Controls.Add(lblFood);
-            this.Controls.Add(txtFood);
-            this.Controls.Add(btnCalculate);
-            this.Controls.Add(lblResult);
-        }
