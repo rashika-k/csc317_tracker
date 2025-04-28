@@ -9,95 +9,96 @@
                HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
-using System;
-using System.Windows.Forms;
-
 namespace BudgetApp
 {
-    public partial class Form1 : Form
+    public partial class BudgetForm : Form
     {
-        public Form1()
+        // --- Frontend Development (GUI Elements) ---
+        private TextBox txtBudget;
+        private TextBox txtNecessities;
+        private TextBox txtMiscellaneous;
+        private TextBox txtOther;
+        private TextBox txtMeals;
+        private TextBox txtFood;
+        private Label lblResult;
+        private Button btnCalculate;
+
+        private MenuStrip menuStrip;
+        private ToolStripMenuItem dashboardMenuItem;
+        private ToolStripMenuItem addExpensesMenuItem;
+        private ToolStripMenuItem budgetMenuItem;
+        private ToolStripMenuItem goalsMenuItem;
+        private ToolStripMenuItem statisticsMenuItem;
+        private ToolStripMenuItem settingsMenuItem;
+
+        public BudgetForm()
         {
             InitializeComponent();
-            SetupUI();
         }
 
-        private void SetupUI()
+        private void InitializeComponent()
         {
             this.Text = "Budget Calculator";
-            this.Width = 700;
-            this.Height = 400;
+            this.Width = 500;
+            this.Height = 500;
 
-            // Top menu
-            string[] menuItems = { "Dashboard", "Add Expenses", "Budget", "Goals", "Statistics", "Setting" };
-            int xPos = 10;
+            // --- Menu ---
+            menuStrip = new MenuStrip();
+            dashboardMenuItem = new ToolStripMenuItem("Dashboard");
+            addExpensesMenuItem = new ToolStripMenuItem("Add Expenses");
+            budgetMenuItem = new ToolStripMenuItem("Budget");
+            goalsMenuItem = new ToolStripMenuItem("Goals");
+            statisticsMenuItem = new ToolStripMenuItem("Statistics");
+            settingsMenuItem = new ToolStripMenuItem("Settings");
 
-            foreach (var item in menuItems)
-            {
-                Button btn = new Button();
-                btn.Text = item;
-                btn.Left = xPos;
-                btn.Top = 10;
-                btn.Width = 100;
-                this.Controls.Add(btn);
-                xPos += 105;
-            }
+            menuStrip.Items.Add(dashboardMenuItem);
+            menuStrip.Items.Add(addExpensesMenuItem);
+            menuStrip.Items.Add(budgetMenuItem);
+            menuStrip.Items.Add(goalsMenuItem);
+            menuStrip.Items.Add(statisticsMenuItem);
+            menuStrip.Items.Add(settingsMenuItem);
+            this.MainMenuStrip = menuStrip;
+            this.Controls.Add(menuStrip);
 
-            // Labels and TextBoxes
-            Label lblBudget = new Label() { Text = "Enter Budget:", Left = 50, Top = 70, Width = 120 };
-            TextBox txtBudget = new TextBox() { Left = 180, Top = 70, Width = 120, Name = "txtBudget" };
+            // --- Input Fields ---
+            Label lblBudget = new Label() { Text = "Enter Budget:", Top = 50, Left = 30, Width = 100 };
+            txtBudget = new TextBox() { Top = 50, Left = 150, Width = 200 };
 
-            Label lblNecessities = new Label() { Text = "Necessities:", Left = 50, Top = 110, Width = 120 };
-            TextBox txtNecessities = new TextBox() { Left = 180, Top = 110, Width = 120, Name = "txtNecessities" };
+            Label lblNecessities = new Label() { Text = "Necessities:", Top = 90, Left = 30, Width = 100 };
+            txtNecessities = new TextBox() { Top = 90, Left = 150, Width = 200 };
 
-            Label lblMeals = new Label() { Text = "Meals:", Left = 50, Top = 150, Width = 120 };
-            TextBox txtMeals = new TextBox() { Left = 180, Top = 150, Width = 120, Name = "txtMeals" };
+            Label lblMiscellaneous = new Label() { Text = "Miscellaneous:", Top = 130, Left = 30, Width = 100 };
+            txtMiscellaneous = new TextBox() { Top = 130, Left = 150, Width = 200 };
 
-            Label lblMisc = new Label() { Text = "Miscellaneous:", Left = 50, Top = 190, Width = 120 };
-            TextBox txtMisc = new TextBox() { Left = 180, Top = 190, Width = 120, Name = "txtMisc" };
+            Label lblOther = new Label() { Text = "Other:", Top = 170, Left = 30, Width = 100 };
+            txtOther = new TextBox() { Top = 170, Left = 150, Width = 200 };
 
-            Button btnCalc = new Button() { Text = "Calculate", Left = 180, Top = 230, Width = 120 };
-            btnCalc.Click += BtnCalc_Click;
+            Label lblMeals = new Label() { Text = "Meals:", Top = 210, Left = 30, Width = 100 };
+            txtMeals = new TextBox() { Top = 210, Left = 150, Width = 200 };
 
-            Label lblResult = new Label() { Text = "Remaining Budget:", Left = 50, Top = 270, Width = 300, Name = "lblResult" };
+            Label lblFood = new Label() { Text = "Food:", Top = 250, Left = 30, Width = 100 };
+            txtFood = new TextBox() { Top = 250, Left = 150, Width = 200 };
 
+            // --- Calculate Button ---
+            btnCalculate = new Button() { Text = "Calculate Budget", Top = 300, Left = 150, Width = 150 };
+            btnCalculate.Click += BtnCalculate_Click;
+
+            // --- Result Label ---
+            lblResult = new Label() { Text = "Remaining Budget: $0.00", Top = 350, Left = 30, Width = 400 };
+
+            // --- Adding controls to the form ---
             this.Controls.Add(lblBudget);
             this.Controls.Add(txtBudget);
             this.Controls.Add(lblNecessities);
             this.Controls.Add(txtNecessities);
+            this.Controls.Add(lblMiscellaneous);
+            this.Controls.Add(txtMiscellaneous);
+            this.Controls.Add(lblOther);
+            this.Controls.Add(txtOther);
             this.Controls.Add(lblMeals);
             this.Controls.Add(txtMeals);
-            this.Controls.Add(lblMisc);
-            this.Controls.Add(txtMisc);
-            this.Controls.Add(btnCalc);
+            this.Controls.Add(lblFood);
+            this.Controls.Add(txtFood);
+            this.Controls.Add(btnCalculate);
             this.Controls.Add(lblResult);
         }
-
-        private void BtnCalc_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                double budget = double.Parse(this.Controls["txtBudget"].Text);
-                double necessities = double.Parse(this.Controls["txtNecessities"].Text);
-                double meals = double.Parse(this.Controls["txtMeals"].Text);
-                double misc = double.Parse(this.Controls["txtMisc"].Text);
-
-                double totalExpenses = necessities + meals + misc;
-                double remaining = budget - totalExpenses;
-
-                this.Controls["lblResult"].Text = $"Remaining Budget: {remaining:C}";
-            }
-            catch
-            {
-                MessageBox.Show("Please enter valid numbers only.");
-            }
-        }
-
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.Run(new Form1());
-        }
-    }
-}
